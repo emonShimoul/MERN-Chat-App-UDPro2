@@ -22,3 +22,7 @@ app.listen(PORT, ()=>{
     console.log("server is running on port: "+ PORT);
     connectDB();
 });
+
+app.get("/", (req, res) => {
+  res.send("API is running 🚀");
+});

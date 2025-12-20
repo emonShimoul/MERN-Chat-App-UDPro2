@@ -8,7 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import { useAuthStore } from './store/useAuthStore';
 
 const App = () => {
-  const {authUser, isCheckingAuth} = useAuthStore();
+  const {authUser, chechAuth} = useAuthStore();
 
   return (
     <>
