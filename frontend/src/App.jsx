@@ -5,8 +5,11 @@ import LoginPage from './pages/LoginPage';
 import SettingsPage from './pages/SettingsPage';
 import ProfilePage from './pages/ProfilePage';
 import { Route, Routes } from 'react-router-dom';
+import { useAuthStore } from './store/useAuthStore';
 
 const App = () => {
+  const {authUser, isCheckingAuth} = useAuthStore();
+
   return (
     <>
       <div>
