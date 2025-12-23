@@ -20,6 +20,10 @@ const App = () => {
     checkAuth();
   }, [checkAuth]);
 
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
   console.log({authUser});
 
   if(isCheckingAuth && !authUser) return (
@@ -27,14 +31,12 @@ const App = () => {
       <Loader className="size-10 animate-spin"></Loader>
     </div>
   )
-  
 
   return (
     <>
-      <div data-theme={theme}>
-        <Navbar></Navbar>
+      <Navbar></Navbar>
 
-        <Routes>
+      <Routes>
         <Route path="/" element={authUser ? <HomePage /> : <Navigate to="/login" />} />
         <Route path="/signup" element={!authUser ? <SignUpPage /> : <Navigate to="/" /> } />
         <Route path="/login" element={!authUser ? <LoginPage /> : <Navigate to="/" />  } />
@@ -43,7 +45,6 @@ const App = () => {
       </Routes>
 
       <Toaster />
-      </div>
     </>
   )
 }
