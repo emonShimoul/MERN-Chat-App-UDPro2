@@ -2,7 +2,7 @@ import {create} from "zustand";
 import toast from "react-hot-toast";
 import {axiosInstance} from "../lib/axios";
 
-export const useChartStore = create((set) => ({
+export const useChatStore = create((set) => ({
     messages: [],
     users: [],
     selectedUser: null,
