@@ -1,0 +1,22 @@
+{
+  "name": "chat-app-(mern)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "",
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emonShimoul/MERN-Chat-App-UDPro2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/emonShimoul/MERN-Chat-App-UDPro2/issues"
+  },
+  "homepage": "https://github.com/emonShimoul/MERN-Chat-App-UDPro2#readme"
+}
